@@ -36,7 +36,7 @@ def main():
                     connection.commit()
                     print(i, data)
             except sqlite3.IntegrityError as e:
-                print("Error:", i, e)
+                print("Error:", i, e, detail_url)
 
     connection.close()
 
