@@ -20,7 +20,7 @@ def main():
     rows = cursor.fetchall()
     #urls = {row[0] for row in rows}
 
-    for i in range(230, 1000):
+    for i in range(1219, 2000):
         url = f'https://dtv-ebook.com.vn/sach-truyen-ebook-313/{i}.html#gsc.tab=0'
         for detail_url in get_detail_urls(url):
             try:
